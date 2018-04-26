@@ -17,11 +17,20 @@
   
   try {  
   
+  //	static String mySQLdbURL = "jdbc:mysql://" + host + ":" + port + "/"	+ DBname;
   
+	Class.forName("com.mysql.jdbc.Driver");
 	
-	Class.forName("com.mysql.jdbc.Driver");	
-	String url =  "jdbc:mysql://"+host+":3306/"+db+"?" +"user="+username+"&password="+password;    
-    con = DriverManager.getConnection(url); 	
+	//String url =  "jdbc:mysql://"+host+":3306/"+db+"?" +"user="+username+"&password="+password;    
+	
+	String url =  "jdbc:mysql://"+host+":3306/"+db;    
+    
+	con = DriverManager.getConnection(url, username, password);
+	
+	//con = DriverManager.getConnection(url); 	
+	
+	
+	
     
     out.println (db+ "  database successfully opened.");
 	PreparedStatement stmt = null;
