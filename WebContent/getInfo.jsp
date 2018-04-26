@@ -19,7 +19,7 @@
   
   
 	
-	
+	Class.forName("com.mysql.jdbc.Driver");	
 	String url =  "jdbc:mysql://"+host+":3306/"+db+"?" +"user="+username+"&password="+password;    
     con = DriverManager.getConnection(url); 	
     
