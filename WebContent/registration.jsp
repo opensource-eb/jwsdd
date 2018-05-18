@@ -11,11 +11,6 @@
     Connection conn = DriverManager.getConnection("jdbc:mysql://jws-app-mysql:3306/sampledb",
             "ronald", "60503176");
     
-	
-	
-	Statement st = con.createStatement();
-    //ResultSet rs;
-	
 	String query = "insert into members(first_name, last_name, email, uname, pass, regdate) values (?, ?, ?, ?, ?, CURDATE())";
 	
 	
@@ -36,7 +31,7 @@
 	
 	
 	
-	con.close();
+	conn.close();
 	
 	
 	
