@@ -16,7 +16,7 @@
 	Statement st = con.createStatement();
     //ResultSet rs;
 	
-	String query = ""insert into members(first_name, last_name, email, uname, pass, regdate) values (?, ?, ?, ?, ?, CURDATE())";
+	String query = "insert into members(first_name, last_name, email, uname, pass, regdate) values (?, ?, ?, ?, ?, CURDATE())";
 	
 	
 	PreparedStatement preparedStmt = conn.prepareStatement(query);
