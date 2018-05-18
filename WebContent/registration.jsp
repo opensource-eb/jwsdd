@@ -22,7 +22,7 @@
       preparedStmt.setString(5, pwd);
 	  
 	  
-        preparedStmt.execute();
+      int i =  preparedStmt.executeUpdate();
 		
 		
 	
