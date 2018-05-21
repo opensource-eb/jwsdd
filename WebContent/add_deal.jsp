@@ -39,7 +39,7 @@ funding_amount
 			
 			
     
-	String query = "insert into dealinfo(startup_name, startup_sector, location, valuation_last, valuation_benchmark,funding_stage ,funding_amount, regdate) values (?, ?, ?, ?, ?,?,? CURDATE())";
+	String query = "insert into dealinfo(startup_name, startup_sector, location, valuation_last, valuation_benchmark,funding_stage ,funding_amount, regdate) values (?, ?, ?, ?, ?,?,?,CURDATE())";
 	
 	
 	PreparedStatement preparedStmt = conn.prepareStatement(query);
@@ -48,14 +48,12 @@ funding_amount
       preparedStmt.setString(3, location);
       preparedStmt.setString(4, valuation_last);
       preparedStmt.setString(5, valuation_benchmark);
-	  preparedStmt.setString(6, funding_stage);
+      preparedStmt.setString(6, funding_stage);
       preparedStmt.setString(7, funding_amount);
 	  
 	  
 	  
-     int i =  preparedStmt.executeUpdate();
-		
-		
+     int i =  preparedStmt.executeUpdate();	
 	
 	//int i = st.executeUpdate("insert into members(first_name, last_name, email, uname, pass, regdate) values ('" + fname + "','" + lname + "','" + email + "','" + user + "','" + pwd + "', CURDATE())");
 	
