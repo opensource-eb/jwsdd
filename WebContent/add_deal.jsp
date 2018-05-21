@@ -62,7 +62,7 @@ funding_amount
 	
 	
 	
-	con.close();
+	conn.close();
 	
 	
 	
