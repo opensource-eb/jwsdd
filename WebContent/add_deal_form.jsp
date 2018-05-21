@@ -40,7 +40,7 @@
                     </tr>
                     <tr>
                         <td>Valution Benchmark</td>
-                        <td><input type="text" name="location" value="" /></td>
+                        <td><input type="text" name="valuation_benchmark" value="" /></td>
                     </tr>					
                     <tr>
                         <td>Funding Stage</td>
