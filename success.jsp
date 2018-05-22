@@ -1,5 +1,4 @@
-﻿
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
     if ((session.getAttribute("userid") == null) || (session.getAttribute("userid") == "")) {
 %>
