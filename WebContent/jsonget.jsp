@@ -22,7 +22,11 @@ You are not logged in<br/>
    Connection conn = DriverManager.getConnection("jdbc:mysql://jws-app-mysql:3306/sampledb",
             "ronald", "60503176");
    String sql = "select * from dealinfo"; 
-   ResultSet rs = stmt.executeQuery(sql); 
+   PreparedStatement preparedStatement = conn.prepareStatement(sql);
+   ResultSet rs = preparedStatement.executeQuery(sql );
+   
+   
+   //ResultSet rs = stmt.executeQuery(sql); 
    //JSONObject obj = new JSONObject();
    
    
