@@ -1,10 +1,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <%@page import="org.json.simple.*"%>
 <%@page import="org.json.simple.JSONObject"%>
 <%@ page import ="java.sql.*" %>
 <%@ page import ="java.util.*" %>
-
 <%
     if ((session.getAttribute("userid") == null) || (session.getAttribute("userid") == "")) {
 %>
@@ -68,23 +66,6 @@ funding_amount
    } 
    
    rs.close(); 
-   
    out.println(arrayObj);
-   
-   
-
-	 
-			
-			
-			
-			
-   
-   
-   
 %>
-
-
-
-
-
 <%}%>
