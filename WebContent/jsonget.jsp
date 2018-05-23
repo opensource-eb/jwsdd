@@ -19,7 +19,7 @@ You are not logged in<br/>
             "ronald", "60503176");
    String sql = "select * from dealinfo"; 
    ResultSet rs = stmt.executeQuery(sql); 
-   JSONObject obj = new JSONObject();
+   //JSONObject obj = new JSONObject();
    
    
    
