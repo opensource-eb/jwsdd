@@ -34,31 +34,35 @@ Welcome <%=session.getAttribute("userid")%> <br/>
 <script>
 
 $('#demo').bootstrapTable({
-  columns:[ //欄位設定
-    {field:'checkbox', title:'選取', align:'center', width:80, visible:true, checkbox:true},
-    {field:'id', title:'代號', align:'center', width:120, visible:true, sortable:true},
-    {field:'name', title:'名稱', align:'left', visible:true},
-    {field:'mailAddress', title:'Email', align:'left', width:200, visible:true},
-    {field:'description', title:'說明', align:'left', width:200, visible:true}
+ columns:[ //欄位設定
+    {field:'checkbox', title:'Select', align:'center', width:80, visible:true, checkbox:true},	
+    {field:'startup_name', title:'startup_name', align:'center', width:120, visible:true, sortable:true},
+    {field:'funding_stage', title:'funding_stage',align:'center', width:120, visible:true, sortable:true},
+    {field:'location', title:'location', align:'left', align:'center', width:120, visible:true, sortable:true},
+	{field:'valuation_last', title:'valuation_last', align:'center', width:120, visible:true, sortable:true},
+	{field:'startup_sector', title:'startup_sector', align:'center', width:120, visible:true, sortable:true},
+	{field:'valuation_benchmark', title:'valuation_benchmark', align:'center', width:120, visible:true, sortable:true},
+	{field:'funding_amount', title:'funding_amount', align:'center', width:120, visible:true, sortable:true}
+	
   ],
   classes:'table',
   
-  data : getRandomData(),//所有資料
+  //data : getRandomData(),//所有資料
   
   
-  /*
-  url: '../data/login_info2.json', 
+  
+  url: 'jsonget.jsp', 
   method: "get",                     //使用get请求到服务器获取数据
   dataType: "json",
   contentType: 'application/json,charset=utf-8',
-  */
+  
   
   
   
   
   
   uniqueId:'id', //哪一個欄位是key
-  sortName:'name', //依照那個欄位排序			
+  sortName:'startup_name', //依照那個欄位排序			
   height : 550,
   pagination : true, //使否要分頁
 
