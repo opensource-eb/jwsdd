@@ -1,5 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="org.json.JSONObject" %>
+
 <%@page import="org.json.simple.*"%>
 <%@page import="org.json.simple.JSONObject"%>
 <%@ page import ="java.sql.*" %>
